@@ -15,3 +15,8 @@ Based on Machine Learning lecture, GMIT
 Original file name: simple-linear-regression.ipynb
 File name with my trials: regression.ipynb
 
+## ML intro with Mosh
+Machine Learning - introductory project - based on Programming with Mosh course
+Notebook file: ML_intro_with_Mosh.ipynb
+README file: ML_intro_with_Mosh_README.md
+

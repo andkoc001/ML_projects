@@ -9,4 +9,6 @@ ___
 
 ## Project background
 
+The dataset for this project is **video games sales**, available from kaggle.com website.
+
 To be updated...

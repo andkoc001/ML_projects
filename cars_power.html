@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.4.0.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="ca0a5f32-008b-405d-94c2-fb2298b51094" data-root-id="2118"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="2299">
+          {"8b85cece-bc38-4b82-81fb-3188fa197aec":{"roots":{"references":[{"attributes":{"text":"Cars With Top Horsepower"},"id":"2119","type":"Title"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"2138","type":"PanTool"},{"id":"2139","type":"ZoomInTool"},{"id":"2140","type":"ZoomOutTool"},{"id":"2141","type":"ResetTool"}]},"id":"2142","type":"Toolbar"},{"attributes":{},"id":"2139","type":"ZoomInTool"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"blue"},"height":{"value":0.5},"line_color":{"value":"blue"},"right":{"field":"right"},"y":{"field":"y"}},"id":"2209","type":"HBar"},{"attributes":{},"id":"2135","type":"CategoricalTicker"},{"attributes":{"ticker":{"id":"2130","type":"BasicTicker"}},"id":"2133","type":"Grid"},{"attributes":{"below":[{"id":"2129","type":"LinearAxis"}],"center":[{"id":"2133","type":"Grid"},{"id":"2137","type":"Grid"}],"left":[{"id":"2134","type":"CategoricalAxis"}],"plot_height":400,"renderers":[{"id":"2211","type":"GlyphRenderer"}],"title":{"id":"2119","type":"Title"},"toolbar":{"id":"2142","type":"Toolbar"},"x_range":{"id":"2121","type":"DataRange1d"},"x_scale":{"id":"2125","type":"LinearScale"},"y_range":{"id":"2123","type":"FactorRange"},"y_scale":{"id":"2127","type":"CategoricalScale"}},"id":"2118","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"2218","type":"UnionRenderers"},{"attributes":{"dimension":1,"ticker":{"id":"2135","type":"CategoricalTicker"}},"id":"2137","type":"Grid"},{"attributes":{},"id":"2125","type":"LinearScale"},{"attributes":{"formatter":{"id":"2148","type":"CategoricalTickFormatter"},"ticker":{"id":"2135","type":"CategoricalTicker"}},"id":"2134","type":"CategoricalAxis"},{"attributes":{},"id":"2219","type":"Selection"},{"attributes":{"callback":null,"factors":["Hennessey Venom F5","Koenigsegg Regera","Bugatti Chiron","NIO EP9","Rimac Concept One","Aston Martin Valkyrie","McLaren P1 LM","Ferrari LaFerrari"]},"id":"2123","type":"FactorRange"},{"attributes":{},"id":"2140","type":"ZoomOutTool"},{"attributes":{},"id":"2138","type":"PanTool"},{"attributes":{"callback":null,"data":{"right":[1600,1500,1479,1341,1224,1130,986,950],"y":["Hennessey Venom F5","Koenigsegg Regera","Bugatti Chiron","NIO EP9","Rimac Concept One","Aston Martin Valkyrie","McLaren P1 LM","Ferrari LaFerrari"]},"selected":{"id":"2219","type":"Selection"},"selection_policy":{"id":"2218","type":"UnionRenderers"}},"id":"2208","type":"ColumnDataSource"},{"attributes":{},"id":"2141","type":"ResetTool"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"height":{"value":0.5},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"right":{"field":"right"},"y":{"field":"y"}},"id":"2210","type":"HBar"},{"attributes":{"data_source":{"id":"2208","type":"ColumnDataSource"},"glyph":{"id":"2209","type":"HBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2210","type":"HBar"},"selection_glyph":null,"view":{"id":"2212","type":"CDSView"}},"id":"2211","type":"GlyphRenderer"},{"attributes":{"callback":null},"id":"2121","type":"DataRange1d"},{"attributes":{},"id":"2130","type":"BasicTicker"},{"attributes":{},"id":"2148","type":"CategoricalTickFormatter"},{"attributes":{"axis_label":"Horspower","formatter":{"id":"2150","type":"BasicTickFormatter"},"ticker":{"id":"2130","type":"BasicTicker"}},"id":"2129","type":"LinearAxis"},{"attributes":{},"id":"2127","type":"CategoricalScale"},{"attributes":{"source":{"id":"2208","type":"ColumnDataSource"}},"id":"2212","type":"CDSView"},{"attributes":{},"id":"2150","type":"BasicTickFormatter"}],"root_ids":["2118"]},"title":"Bokeh Application","version":"1.4.0"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('2299').textContent;
+                  var render_items = [{"docid":"8b85cece-bc38-4b82-81fb-3188fa197aec","roots":{"2118":"ca0a5f32-008b-405d-94c2-fb2298b51094"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

@@ -20,3 +20,7 @@ Machine Learning - introductory project - based on Programming with Mosh course
 Notebook file: ML_intro_with_Mosh.ipynb
 README file: ML_intro_with_Mosh_README.md
 
+## Bokeh practice
+Practice scripts to explore the Bokeh package.
+Based on various tutorials and examples; also my own experiments.
+
